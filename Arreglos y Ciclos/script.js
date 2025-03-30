@@ -4,6 +4,9 @@ const frutas = ['manzana', 'plátano', 'naranja', 'manzana', 'pera', 'plátano',
 // Objeto para almacenar la cantidad de cada tipo de fruta usando FOR
 const conteoFrutasFor = {};
 
+let usuarioFruta = prompt('Ingresa la fruta que quieres buscar')
+let usuarioColor = prompt('Ingresa el color que quieres buscar')
+
 for (let i = 0; i < frutas.length; i++) {
     let fruta = frutas[i];
     if (conteoFrutasFor[fruta]) {
@@ -14,6 +17,7 @@ for (let i = 0; i < frutas.length; i++) {
 }
 
 console.log('🍎 Conteo de frutas con FOR:', conteoFrutasFor);
+
 
 // Objeto para almacenar la cantidad de cada tipo de fruta usando WHILE
 const conteoFrutasWhile = {};
