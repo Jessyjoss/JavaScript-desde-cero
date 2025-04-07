@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Libro: La Cenicienta</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Información del Libro</h1>
+    <button onclick="libro.describirLibro()">Mostrar información</button>
+    <div id="infoLibro"></div>
+
+    <h2>Capítulos</h2>
+    <ul id="listaCapitulos"></ul>
+
+    <input type="text" id="capituloNuevo" placeholder="Nuevo capítulo" />
+    <button onclick="agregarCapitulo()">Agregar Capítulo</button>
+    <button onclick="eliminarUltimoCapitulo()">Eliminar Último Capítulo</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
