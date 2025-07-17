@@ -1,0 +1,157 @@
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Estilo para h1, h2, h3, h4 */
+h1, h2, h3, h4 {
+  color: rgb(255, 189, 108);
+  margin-bottom: 10px;
+  margin-top: 0;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.8);
+}
+
+/* Tamaño completo */
+html, body {
+  height: 100%;
+}
+
+/* Contenedor general */
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+/* Estilo base para todas las secciones */
+section {
+  padding: 0;
+  min-height: 100vh;
+  color: white;
+  background-size: cover;
+  background-position: center;
+  display: none; /* Ocultar por defecto */
+  position: relative;
+}
+
+/* Mostrar solo la primera sección al inicio */
+#login-section {
+  display: block;
+}
+
+/* Fondos personalizados */
+#login-section {
+  background-image: url('Biblio Login.jpg');
+}
+#books-section {
+  background-image: url('Estanteria.png');
+}
+#comment-section {
+  background-image: url('imagen de estanteria de libros unfantiles con su portada.jpg');
+}
+
+/* Contenedor superior izquierdo para encabezados y formularios */
+#login-section h1,
+#login-section h3,
+#books-section h2,
+#books-section h4,
+#comment-section h2,
+#comment-section h4,
+#login-form,
+#books-form,
+#comment-form {
+  position: absolute;
+  left: 30px;
+  text-align: left;
+}
+
+/* Posicionamiento de los títulos y formularios en cada sección */
+#login-section h1 { top: 20px; }
+#login-section h3 { top: 60px; }
+#login-form        { top: 100px; }
+
+#books-section h2 { top: 20px; }
+#books-section h4 { top: 60px; }
+#books-form        { top: 100px; }
+
+#comment-section h2 { top: 20px; }
+#comment-section h4 { top: 60px; }
+#comment-form        { top: 100px; }
+
+/* Formularios */
+form {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+  height: 200px;
+  width: 300px;
+  color: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+/* Campos de entrada */
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Botones */
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #722209;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #722209;
+}
+
+/* Botón azul para avanzar */
+.next-button {
+  margin-top: 20px;
+  background-color: #eb7d00;
+}
+
+.next-button:hover {
+  background-color: #eb7d00;
+}
+
+/* Imagen (si se usa en img tag) */
+.img img {
+  max-width: 150px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+/* Texto de error */
+.error-message {
+  color: red;
+  margin-top: 10px;
+}
+
+/* Listas dinámicas */
+#books-list p,
+#comment-list p {
+  background-position: center;
+  color:black;
+  background-color:rgba(201, 75, 2, 0.363);
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+
+

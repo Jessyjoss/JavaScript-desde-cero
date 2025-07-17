@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Biblioteca Virtual</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+
+    <!-- Sección 1: Login -->
+    <section id="login-section">
+        <img src="Biblio Login.jpg" alt="Imagen de biblioteca" />
+      <h1>Iniciar Sesión</h1>
+      <h3>Bienvenidos a la Biblioteca Virtual</h3>
+      <form id="login-form">
+        <input type="text" id="username" placeholder="Usuario" required />
+        <input type="password" id="password" placeholder="Contraseña" required />
+        <button type="submit">Entrar</button>
+        <p id="login-error" class="error-message"></p>
+      </form>
+    </section>
+
+    <!-- Sección 2: Libros -->
+    <section id="books-section">
+       <img src="Estanteria.png" alt="Libros Disponibles /">
+      <h2>Libros Disponibles</h2>
+      <h4>Ingresa el nombre del libro y su ubicación</h4>
+      <form id="books-form">
+        <input type="text" id="book-title" placeholder="Título del libro" required />
+        <input type="text" id="book-location" placeholder="Ubicación (Ej. Estante A3)" required />
+        <button type="submit">Guardar</button>
+      </form>
+      <button class="next-button" id="to-comments">Ir a Comentarios</button>
+      <div id="books-list"></div>
+    </section>
+
+    <!-- Sección 3: Comentarios -->
+    <section id="comment-section">
+       <img src="imagen de estanteria de libros unfantiles con su portada.jpg" alt="Comentarios" />
+      <h2>Caja de Comentarios</h2>
+      <h4>Deja tu opinión o sugerencia</h4>
+      <form id="comment-form">
+        <textarea id="comment-input" placeholder="Escribe tu comentario..." required></textarea>
+        <button type="submit">Agregar Comentario</button>
+      </form>
+      <div id="comment-list"></div>
+    </section>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
